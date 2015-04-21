@@ -141,16 +141,3 @@ DirectoryIndex index.php index.html index.htm
     </FilesMatch>
   </IfModule>
 </IfModule>
-
-##### Deny suspicious IP addresses ######
-<Files 403.shtml>
-order allow,deny
-allow from all
-</Files>
-# Following IP are suspicious from Drupal recent log
-  deny from 69.12.79.163
-  deny from 66.118.156.150
-
-# Redirects
-  redirect 301 /domains-for-sale http://thisweekiniraq.com/
-
